@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: service-orders
+  datasource:
+    username: root
+    password: rootqw
+    url: jdbc:mysql://192.168.50.144:3316/new_schema?useUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.cj.jdbc.NonRegisteringDriver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8081
+service-product:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+    #    ribbon timeout 设置居然有效果
+    ReadTimeout: 60000
+    ConnectTimeout: 60000
