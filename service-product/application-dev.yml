@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: service-orders
   datasource:
     username: root
     password: rootqw
@@ -10,17 +8,9 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
-  profiles:
-    active: test
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 server:
-  port: 8081
-service-product:
-  ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
-    #    ribbon timeout 设置居然有效果
-    ReadTimeout: 60000
-    ConnectTimeout: 60000
+  port: 8080

@@ -1,4 +1,28 @@
-.idea/config-repo-demo.iml
-.idea/misc.xml
-.idea/vcs.xml
-.idea/workspace.xml
+HELP.md
+### MAVEN ###
+/target/
+.mvn/
+mvnw*
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+/build/
